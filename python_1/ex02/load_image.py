@@ -1,11 +1,11 @@
 from matplotlib import image
 from matplotlib import pyplot
 
-def load_image(path):
-    try:
-        image = image.imread(path)
-        pyplot.imshow(image)
-        print("the shape of the image is : "+ str(image.shape))
-        print(image)
-    except:
-        print('image not able to be loaded')
+def ft_load(path):
+    #try:
+        img = image.imread(path)
+        print("the shape of the image is : "+ str(img.shape))
+        print(img)
+        return img
+    #except:
+     #   print('image not able to be loaded')
